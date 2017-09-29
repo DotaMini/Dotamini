@@ -1,0 +1,103 @@
+.banner {
+    position: relative;
+    height: 420rpx;
+    width: 100%;
+}
+.dots {
+    position: absolute;
+    width: 100%;
+    bottom: 20rpx;
+    display: flex;
+    justify-content: center;
+}
+.dot {
+    margin: 0 8rpx;
+    width: 14rpx;
+    height: 14rpx;
+    background-color: #fff;
+    border-radius: 8rpx;
+    transition: all .6s;
+}
+.active {
+    width: 24rpx;
+    background: #f80;
+}
+.img_txt {
+  position: absolute;
+  height: 50rpx;
+  width: 80%;
+  bottom: 40rpx;
+  color: #fff;
+  font-weight: 600;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 50rpx;
+  left: 10%;
+  border-radius: 10rpx;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.news {
+  height: auto;
+  width: 100%;
+  margin-bottom: 100rpx;
+}
+.new {
+  height: 200rpx;
+  width: 100%;
+  margin: 5rpx 0;
+  border: 1px solid #dedfe0;
+}
+.new_img {
+  height: 100%;
+  width: 40%;
+  float: left;
+}
+.new_txt {
+  height: 100%;
+  width: 60%;
+  float: left;
+  padding: 0 16rpx;
+}
+.txt_desc {
+  width: 100%;
+}
+.new_title {
+  height: 140rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display:table-cell;
+  vertical-align: middle;
+}
+.new_title text {
+    color: #000;
+    font-size: 32rpx; 
+    font-weight: bold;
+    display: inline-block;
+}
+.new_data {
+  height: 60rpx;
+  padding: 0 15rpx;
+}
+.time {
+  float: left;
+}
+.seen {
+  float: right;
+}
+.data {
+  height: 100%;
+  width: auto;
+  display: table-cell;
+  vertical-align:middle;
+}
+.data image {
+  height: 34rpx;
+  width: 34rpx;
+  vertical-align: middle;
+}
+.data text {
+  color: #888;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+}

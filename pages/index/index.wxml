@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="banner">
+        <swiper autoplay="auto" interval="5000" duration="1000" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper cover">
+            <block wx:for="{{slider}}" wx:key="unique">
+                <swiper-item>
+                    <image src="../../img/{{item.now}}.jpg" class="cover"></image>
+                    <view class="img_txt">
+                        <text>{{item.desc}}</text>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">
+            <block wx:for="{{slider}}" wx:key="unique">
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+            </block>
+        </view>
+    </view>
+    <view class="news">
+        <view class="new" wx:for="{{news}}" wx:key="" bindtap="detail">
+            <view class="new_img">
+                  <image src="{{item.img}}" class="cover"></image>
+            </view>
+            <view class="new_txt">
+                <view class="new_title txt_desc">
+                    <text>{{item.title}}</text>
+                </view>
+                <view class="new_data txt_desc">
+                    <view class="time data">
+                        <image src="../../img/time.png"></image>
+                        <text>{{item.time}}</text>
+                    </view>
+                    <view class="seen data">
+                        <image src="../../img/view.png"></image>
+                        <text>{{item.view}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
